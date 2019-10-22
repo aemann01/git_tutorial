@@ -1,0 +1,15 @@
+### Git tutorial
+
+#first need to pull git files from online repo
+#navigate to your home folder
+cd
+
+#now can 'clone' files from remote repository
+git clone https://github.com/aemann01/git_tutorial
+
+#move into folder
+cd git_tutorial
+
+#what files are there?
+ls
+
