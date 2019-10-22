@@ -6,4 +6,4 @@ from Bio import SeqIO
 for rec in SeqIO.parse(open(sys.argv[1], 'r'), 'fasta'):
     name = rec.id
     seqLen = len(rec)
-    print name, seqLen
+    print(name, seqLen)
