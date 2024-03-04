@@ -137,9 +137,7 @@ You get a good night sleep and your favorite caffinated drink the next morning a
 python3 count_bases.py iodamoeba_rep.fa
 ```
 
-:fearful:
-
-Uh oh. You have no idea what changes you made and this is going to set you back weeks!! But then you remember you use git and can revert to before you made the error!
+Uh oh :fearful:. You have no idea what changes you made and this is going to set you back weeks!! But then you remember you use git and can revert to before you made the error!
 
 ```bash
 # whoops now our script doesn't work! revert to your previous commit
