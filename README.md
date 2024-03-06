@@ -26,6 +26,28 @@ There are just a few basic git commands that you will need to know to run git an
 
 There are many more git commands and other fancier ways to use git/github. See the [full reference guide to git commands](https://git-scm.com/docs).
 
+## Start using git
+
+if you have not used git previously you should set up git to start working with it 
+
+```
+# set your user name
+git config --global user.name "example_name"
+
+# set your email
+git config --global user.email example_email@replace.com
+
+# set default text editor
+# this editor will appear by default when you commit to a change if you dont add a short message for the commit
+git config --global core.editor "nano -cw" 
+
+#additional configs 
+#for windows user if reading newlines from linux/mac
+git config --global core.autocrlf true
+
+```
+
+
 ## Let's try some simple git functions
 
 Open a terminal and clone this tutorial on to your laptop
@@ -55,6 +77,17 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/<your account>/testrepo.git
 git push -u origin master
+```
+
+Note: now github uses main instead of master you might need to change the name of the initial branch in your local repo.
+
+```
+#code to rename the current branch
+git branch -m main 
+
+#optinal you can set up your local git to start repositories as main instead of master 
+git config --global init.defaultbranch main
+
 ```
 
 Now refresh your github repository page for testrepo -- you should see your readme file but no others!
