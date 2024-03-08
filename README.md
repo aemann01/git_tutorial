@@ -119,7 +119,7 @@ git status # you should no longer see the fasta file but it still exists in the 
 Let's add a new file to the repo, check status again
 
 ```bash
-touch newfile.txt && echo "hello world!"
+touch newfile.txt && echo "hello world!" >> newfile.txt
 git status
 ```
 
